@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Example NodeJS with sqlite</title>
+</head>
+<body>
+    <a style="text-decoration: none; color: black;" href="/"><h1 style="text-align: center; margin-top: 10%; font-style: italic; font-family: 'Courier New', Courier, monospace;">Welcome to Example NodeJS with sqlite</h1></a>
+    <div  style="display: flex; margin-top: 6%; justify-content: center;">
+        <form action="/add" method="post">   
+            <label>Firstname</label>
+            <input class="form-control"  type="text" name="firstname" required>
+            <label>Lastname</label>
+            <input class="form-control"  type="text" name="lastname" required>
+            <label>Age</label>
+            <input class="form-control" type="number" name="age" required>
+            <label>Phone Number</label>
+            <input class="form-control"  type="text" name="phone" maxlength="10" required>
+            <div class="text-center" >
+                <button type="submit" class="mt-5 btn btn-primary">Send</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

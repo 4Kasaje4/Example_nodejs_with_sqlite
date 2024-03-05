@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Edit </title>
+</head>
+<body>
+    <a style="text-decoration: none; color: black;" href="/"><h1 style="text-align: center; margin-top: 10%; font-style: italic; font-family: 'Courier New', Courier, monospace;">Edit user</h1></a>
+    <div  style="display: flex; margin-top: 6%; justify-content: center;">
+        <form action="/edit/<%=id%>" method="post">   
+            <label>Firstname</label>
+            <input class="form-control"  type="text" name="firstname" placeholder="<%=result[0].firstname %>" required>
+            <label>Lastname</label>
+            <input class="form-control"  type="text" name="lastname" placeholder="<%=result[0].lastname %>" required>
+            <label>Age</label>
+            <input class="form-control" type="number" name="age" placeholder="<%=result[0].age %>" required>
+            <label>Phone Number</label>
+            <input class="form-control"  type="text" name="phone" maxlength="10" placeholder="<%=result[0].phone %>" required>
+            <div class="text-center" >
+                <button type="submit" class="mt-5 btn btn-warning">Update</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
